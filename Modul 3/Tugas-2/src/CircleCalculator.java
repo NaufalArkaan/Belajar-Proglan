@@ -50,6 +50,14 @@ public class CircleCalculator {
     }
 
     /**
+     * Menentukan apakah lingkaran kecil atau besar.
+     * @return "Kecil" jika radius < 10, "Besar" jika >= 10
+     */
+    public String getSizeCategory() {
+        return (radius < 10) ? "Kecil" : "Besar";
+    }
+
+    /**
      * Program utama untuk menjalankan contoh perhitungan.
      * @param args argumen baris perintah (tidak digunakan)
      */
@@ -58,5 +66,6 @@ public class CircleCalculator {
         System.out.println("Jari-jari: " + circle.getRadius());
         System.out.println("Luas     : " + circle.getArea());
         System.out.println("Keliling : " + circle.getCircumference());
+        System.out.println("Kategori Lingkaran : " + circle.getSizeCategory());
     }
 }
