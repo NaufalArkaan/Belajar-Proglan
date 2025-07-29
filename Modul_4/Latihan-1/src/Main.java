@@ -61,6 +61,7 @@ public class Main {
                     break;
                 case 5:
                     System.out.println("Terima kasih telah menggunakan kalkulator ini.");
+                    scan.close();
                     System.exit(1);
                     break;
                 default:
