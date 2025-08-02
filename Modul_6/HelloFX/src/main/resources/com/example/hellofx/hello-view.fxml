@@ -4,12 +4,18 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.hellofx.HelloController">
+<VBox alignment="CENTER" prefHeight="344.0" prefWidth="296.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
+   <Label text="Username:" />
+   <TextField />
+   <Label text="Password:" />
+   <TextField />
 
     <Label fx:id="welcomeText" />
    <Button mnemonicParsing="false" text="Button" />
-    <Button onAction="#onHelloButtonClick" text="Hello!" />
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
 </VBox>
